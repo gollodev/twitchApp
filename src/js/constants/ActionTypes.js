@@ -1,0 +1,1 @@
+export const GET_LIST_STREAMS = 'GET_LIST_STREAMS';
