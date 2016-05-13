@@ -18,9 +18,9 @@ class ListStreamsContainer extends Component {
 	}		
 
 	render() {					
-		const { actions, listStreams } = this.props;
-		console.log(listStreams)
-		const appBarStyle = {position: 'fixed'}; 				
+		const { streams } = this.props.listStreams.toObject();
+		const { actions } = this.props;		
+		const appBarStyle = { position: 'fixed' }; 				
 		return (
 			<div>
 				<AppBar
@@ -28,7 +28,7 @@ class ListStreamsContainer extends Component {
 				    style={appBarStyle}				    		    			    
 				/>
 				<ListStreams 
-					streams={listStreams.streams} 
+					streams={streams} 
 					fetchStreams={actions.fetchStreams}
 				/>
 			</div>			

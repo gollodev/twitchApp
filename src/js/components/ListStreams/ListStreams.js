@@ -1,11 +1,12 @@
 import React, { Component, PropTypes } from 'react';
+import Immutable from 'immutable';
 import ListStreamItem from '../ListStreamItem/ListStreamItem';
 import './ListStreams.scss';
 
 class ListStreams extends Component {
 
 	static propTypes = {
-		streams: PropTypes.array.isRequired,
+		streams: PropTypes.instanceOf(Immutable.List).isRequired,
 		fetchStreams: PropTypes.func.isRequired
 	}		
 
