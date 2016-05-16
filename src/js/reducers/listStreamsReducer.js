@@ -1,9 +1,22 @@
 import * as ActionTypes from '../constants/ActionTypes';
-import { List, Map } from 'immutable';
+import { List, Map, Record } from 'immutable';
 
-const initialState = Map({
-	streams: List([])
-})
+const streamsState = new Record({
+	streams: List([
+		Map({
+			_id: null,
+			game: 'undefined',
+			viewers: null,
+			created_at: 'undefined',
+			video_height: null,
+			average_fps: null,
+			delay: 0,
+			is_playlist: null
+		})
+	])
+});
+
+const initialState = new streamsState;
 
 const listStreamsReducer = (state = initialState, action) => {
 	switch (action.type) {
