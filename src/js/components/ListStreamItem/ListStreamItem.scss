@@ -9,4 +9,34 @@
 	}
 }
 
+@media (min-width: 320px) and (max-width: 375px) {
+	.Card {
+		display: inline-block; 
+		width: 230px; 
+		height: 350px;
+		margin: 15px 15px;	
+		img {
+			width: 230px;
+			height: 100px;
+		}
+		span {
+			font-size: 0.6em !important;
+		}
+	}
+}
 
+@media (min-width: 425px) and (max-width: 767px) {
+	.Card {
+		display: inline-block; 
+		width: 320px; 
+		height: 400px;
+		margin: 15px 15px;	
+		img {
+			width: 320px;
+			height: 100px;
+		}
+		span {
+			font-size: 1em !important;
+		}
+	}
+}

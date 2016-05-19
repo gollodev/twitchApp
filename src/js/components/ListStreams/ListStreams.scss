@@ -1,5 +1,48 @@
-.ContainerCard {
-	margin: 0 auto;
-	width: 85%;
-	padding: 100px 20px 0 20px;
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 100%;
+		padding: 100px 20px 0 20px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 80%;
+		padding: 100px 20px 0 20px;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 92%;
+		padding: 100px 20px 0 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 61%;
+		padding: 100px 20px 0 20px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 88%;
+		padding: 100px 20px 0 20px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.ContainerCard {
+		margin: 0 auto;
+		width: 93%;
+		padding: 100px 20px 0 20px;
+	}
 }
